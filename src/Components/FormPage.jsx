@@ -68,13 +68,15 @@ const FormPage = () => {
   };
 
   return (
-    <div style={{ maxWidth: '500px', margin: 'auto' }}>
+    <div className='main-body' style={{
+      maxWidth: '500px', 
+      margin:"auto"}}>
       <h2>Registration Form</h2>
       <form onSubmit={handleSubmit}>
         {Object.keys(formData).map((key) => {
           if (key === 'phoneCode' || key === 'phoneNumber') return null;
           return (
-            <div key={key} style={{ marginBottom: '10px' }}>
+            <div key={key} style={{ marginBottom: '10px', display:"flex" }}>
               <label>{key.charAt(0).toUpperCase() + key.slice(1)}:</label>
               {key === 'password' ? (
                 <div>
@@ -120,7 +122,7 @@ const FormPage = () => {
           );
         })}
 
-        <div style={{ marginBottom: '10px' }}>
+        <div style={{ marginBottom: '10px', display:"flex" }}>
           <label>Phone:</label>
           <div style={{ display: 'flex', gap: '5px' }}>
             <input
