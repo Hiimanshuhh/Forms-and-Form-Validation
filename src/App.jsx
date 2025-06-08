@@ -1,7 +1,7 @@
 import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
-import FormPage from './components/FormPage.jsx';
-import SuccessPage from './components/SuccessPage.jsx';
+import FormPage from './Components/FormPage.jsx';
+import SuccessPage from './Components/SuccessPage.jsx';
 
 const App = () => {
   return (
