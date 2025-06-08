@@ -69,8 +69,9 @@ const FormPage = () => {
 
   return (
     <div className='main-body' style={{
-      maxWidth: '500px', 
-      margin:"auto"}}>
+      maxWidth: '500px',
+      marginLeft:"490px",  
+      marginTop:"150px"}}>
       <h2>Registration Form</h2>
       <form onSubmit={handleSubmit}>
         {Object.keys(formData).map((key) => {
@@ -147,7 +148,7 @@ const FormPage = () => {
           )}
         </div>
 
-        <button type="submit" disabled={!isFormValid}>
+        <button className='submit' type="submit" disabled={!isFormValid}>
           Submit
         </button>
       </form>
